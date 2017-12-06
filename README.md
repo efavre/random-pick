@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/efavre/random-pick/tree/master.svg?style=svg)](https://circleci.com/gh/efavre/random-pick/tree/master)
+
 # random-pick
 picks and returns a random value from a provided list
 
