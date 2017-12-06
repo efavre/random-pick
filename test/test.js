@@ -1,16 +1,14 @@
 'use strict';
 const app = require('../app');
-const assert = require('assert');
 const request = require('supertest')(app);
 const should = require("should");
 
 describe('API', function() {
-
-  describe('POST /options', function() {
+  describe('POST /random-pick', function() {
     it('should randomly pick a value from input array', function(done) {
       const input = ["one", "two"]
       request
-        .post('/options')
+        .post('/random-pick')
         .send(input)
         .set('Content-type', 'application/json')
         .expect(200)
