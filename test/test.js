@@ -12,9 +12,10 @@ describe('API', function() {
         .send(input)
         .set('Content-type', 'application/json')
         .expect(200)
-        .expect('Content-Type', 'text/plain')
+        .expect('Content-Type', 'application/json')
         .end(function(err, res) {
-          input.should.containEql(res.text);
+
+          input.should.containEql(res.body.option);
           done();
         });
     });
