@@ -15,8 +15,8 @@ npm start
 # Run on docker
 
 ```
-docker build -t $IMAGE_NAME .
-docker run -p 3000:3000 -d $IMAGE_NAME
+docker build -t random-pick .
+docker run -p 3000:3000 -d random-pick
 ```
 
 # Query
